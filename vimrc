@@ -8,7 +8,7 @@ set nobackup
 set nowritebackup
 set novisualbell
 set visualbell t_vb=
-
+set showcmd
 set updatetime=250
 
 set number
@@ -34,7 +34,7 @@ set listchars=""                  " Reset the listchars
 set listchars=tab:\ \             " a tab should display as "  ", trailing whitespace as "."
 set listchars+=trail:·
 set listchars+=extends:>          " The character to show in the last column when wrap is
-set listchars+=precedes:< 
+set listchars+=precedes:<
 
 ""
 "" Wild settings
@@ -86,6 +86,9 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
+
+" split line
+nnoremap K i<Enter><Esc>
 
 ""
 "" COLOR
