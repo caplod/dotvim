@@ -14,6 +14,7 @@ let g:colors_name = "railscasts"
 " Colors
 " Brown        #BC9357
 " Dark Blue    #6D9CBD
+" Light Blue   #d0d0ff
 " Dark Green   #509E50
 " Dark Orange  #CC7733
 " Light Blue   #CFCFFF
@@ -38,7 +39,6 @@ hi! link Todo Comment
 
 hi String     guifg=#A5C160
 hi! link Number String
-hi! link rubyStringDelimiter String
 
 " nil, self, symbols
 hi Constant guifg=#6D9CBD
@@ -50,7 +50,8 @@ hi! link Keyword Define
 hi! link Macro Define
 
 " #{foo}, <%= bar %>
-hi Delimiter guifg=#509E50
+" hi Delimiter guifg=#509E50
+hi Delimiter guifg=NONE
 " hi erubyDelimiter guifg=NONE
 
 " function name (after def)
@@ -69,8 +70,6 @@ hi! link PreCondit Statement
 " SomeClassName
 hi Type guifg=NONE gui=NONE
 
-" has_many, respond_to, params
-hi railsMethod guifg=#DA4938 gui=NONE
 
 hi DiffAdd guifg=#E6E1DC guibg=#144212
 hi DiffDelete guifg=#E6E1DC guibg=#660000
@@ -95,3 +94,27 @@ hi PMenuSbar guibg=#5A647E gui=NONE
 " thumb of the scrollbar in the popup
 hi PMenuThumb guibg=#AAAAAA gui=NONE
 
+" Ruby
+" ---------
+hi rubyClass guifg=#CC7733
+hi rubyPseudoVariable guifg=#d0d0ff
+" has_many, respond_to, params
+hi railsMethod guifg=#DA4938 gui=NONE
+hi rubyInterpolationDelimiter guifg=#A5C160
+hi rubyInterpolation guifg=#509E50
+hi! link rubyStringDelimiter String
+
+" CSS
+" ---------------
+hi cssProp guifg=#6D9CBD
+hi cssAttr guifg=#A5C160
+
+hi! link sassAmpersand sassClassChar
+hi! link sassClass cssClassName
+hi! link sassId cssClassName
+hi! link hamlClass cssClassName
+hi! link hamlId cssClassName
+
+" Javascript
+" ------------------
+hi! link coffeeParens javaScriptParens
