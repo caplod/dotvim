@@ -90,6 +90,9 @@ nnoremap <C-H> <C-W><C-H>
 " split line
 nnoremap K i<Enter><Esc>
 
+" write as sudo
+cmap w!! w !sudo tee > /dev/null %
+
 ""
 "" COLOR
 ""
