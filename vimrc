@@ -115,9 +115,6 @@ if has("autocmd")
   " set comment marker for typoscript
   autocmd FileType typoscript setlocal commentstring=#\ %s
 
-  " This actually might be confusing, but the plugin +ruby+ already does
-  " this, so we want to do it only if the plugin +ruby+ is disabled for
-  " some reason
   " Set the Ruby filetype for a number of common Ruby files without .rb
   au BufRead,BufNewFile {Capfile,Gemfile,Rakefile,Vagrantfile,Thorfile,Procfile,Guardfile,config.ru,*.rake} set ft=ruby
 
