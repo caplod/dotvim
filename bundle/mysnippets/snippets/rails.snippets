@@ -107,7 +107,7 @@ snippet defupdate
 	end
 snippet defparams
 	def ${1:model_class_name}_params
-		params.require(:$1).permit()
+		params.require(:$1).permit(:${2})
 	end
 snippet dele delegate .. to
 	delegate :${1:methods}, to: :${0:object}

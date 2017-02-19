@@ -31,7 +31,9 @@ snippet req require
 snippet reqr
 	require_relative '${1}'
 snippet #
-	# =>
+	#{${0}}
+snippet @
+	@${1:attribute} = $1
 snippet case
 	case ${1:object}
 	when ${2:condition}
