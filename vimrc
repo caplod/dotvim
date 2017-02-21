@@ -74,6 +74,9 @@ map <leader>r :registers<CR>
 " Underline the current line with '='
 nmap <silent> <leader>ul :t.<CR>Vr=
 
+" for tags search
+noremap <C-ü> <C-]>
+
 " use ö for :
 map ö :
 
