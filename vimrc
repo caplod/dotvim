@@ -71,6 +71,8 @@ let mapleader=","
 map <leader>n :NERDTreeToggle<CR>
 
 map <leader>r :registers<CR>
+" Underline the current line with '='
+nmap <silent> <leader>ul :t.<CR>Vr=
 
 " use ö for :
 map ö :
