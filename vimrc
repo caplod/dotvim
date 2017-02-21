@@ -58,13 +58,13 @@ set wildignore+=*/tmp/cache/assets/*/sprockets/*,*/tmp/cache/assets/*/sass/*
 set wildignore+=*.swp,*~,._*
 
 ""
-"" FINDING FILES
+"" Finding files
 ""
 set path=**
 set wildmenu
 
 ""
-"" KEYS
+"" Keys
 ""
 let mapleader=","
 
@@ -99,13 +99,13 @@ nnoremap K i<Enter><Esc>
 cmap w!! w !sudo tee > /dev/null %
 
 ""
-"" COLOR
+"" Color
 ""
 set background=dark
 colorscheme railscasts
 
 ""
-"" FONT
+"" Font
 ""
 set guifont=Source\ Code\ Pro:h14            " Font family and font size.
 set antialias
