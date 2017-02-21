@@ -68,9 +68,9 @@ set wildmenu
 ""
 let mapleader=","
 
-map <leader>n :NERDTreeToggle<CR>
+nmap <silent> <leader>n :NERDTreeToggle<CR>
+nmap <silent> <leader>r :registers<CR>
 
-map <leader>r :registers<CR>
 " Underline the current line with '='
 nmap <silent> <leader>ul :t.<CR>Vr=
 
