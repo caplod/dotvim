@@ -39,6 +39,11 @@ set tabstop=2                     " a tab is two spaces
 set shiftwidth=2                  " an autoindent (with <<) is two spaces
 set expandtab                     " use spaces, not tabs
 set list
+set listchars=""                  " Reset the listchars
+set listchars=tab:\ \             " a tab should display as "  ", trailing whitespace as "."
+set listchars+=trail:·
+set listchars+=extends:>          " The character to show in the last column when wrap is
+set listchars+=precedes:<
 set smarttab
 ""
 "" Wild settings
