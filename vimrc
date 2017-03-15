@@ -90,9 +90,6 @@ nnoremap <silent> <leader>cd :lcd %:h<CR>
 nnoremap <leader>b :Buffers<CR>
 " Underline the current line with '='
 nnoremap <silent> <leader>ul :t.<CR>Vr=
-" save
-nnoremap <C-s> :w<CR>
-inoremap <C-s> <Esc>:w<CR>
 
 " Disable arrow keys
 noremap <Up> <NOP>
